@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--Pemert de déclarer la langue de la page-->
+<head>  <!--Permet d'indiquer des metadonnées au document'-->
+    <meta charset="UTF-8"> <!--Permet de déclarer l'encodage en UTF8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Permet d'afficher le contenur dans la version la plus récente du moteur de recherche-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" title="Design" href="css/contact.css"> <!--Permet de définir la relation entre un document-->
+    <link rel="shortcut icon" href="images/logo.png"> <!--Permet d'afficher une image en logo dans l'entête de page-->
+    <title>Contact | Apple Custom</title> <!--Permet d'affecter un nom de page dans l'entête de pas -->
+</head>
+<body>
+    <header role="banner"> <!--Permet de segmenter le code pour la section d'introduction -->
+        <nav role="navigation"> <!--Permet de sectionner une page ayant des liens vers d'autres pages-->
+            <img src="images/logo.png" alt=""> <!--Permet d'integrer une image-->
+            <ul> <!--Représente une liste à puces -->
+                <li><a href="index.html">Accueil</a></li> <!--Permet de représenter un élément dans la liste, ici un lien hypertext a -->
+                <li><a href="categorie1.html">Iphone</a>  
+                    <ul class="sous">
+                        <li><a href="categorie1.html">Iphone Bois</a></li>
+                    </ul>
+                </li>
+                <li><a href="categorie2.html">Watch</a>
+                    <ul class="sous">
+                        <li><a href="categorie2.html">Watch Nature</a></li>
+                    </ul>
+                </li>
+                <li><a href="categorie3.html">Mac</a>
+                    <ul class="sous">
+                        <li><a href="categorie3.html">Mac Color</a></li>
+                    </ul>
+                </li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">🇫🇷</a></li>
+                <li><a href="">🇬🇧</a></li>
+            </ul>
+        </nav>
+        <img src="images/bannierecontact.jpg" alt="">
+        <h1>Page</h1>   <!--Permet de représenter un titre celon son niveau (h1-h6) ici h1 donc le plus grand-->
+        <h2>Contact</h2>    <!--Permet de représenter un titre, ici h2 dans plus petit que h1-->
+    </header>
+
+    <main role="main">  <!--Permet de segmenter le code pour la section qui représente le contenue majoritaire du body-->
+        <fieldset> <!--Englobe par une bordure les champs des formulaire -->
+            <legend>Contacter Color Custom</legend> <!--Permet d'ajouter un texte dans la bordure fieldset-->
+            <p>
+                <input required autocomplete="email" title="email" type="email" name="email" placeholder=" Votre adresse email" aria-invalid="true"> <!--Défini un champ de saisie, avec un type email pour exiger un contenu au format d'adresse électronique, avec une chaine de caractere-->
+            </p>
+            <p>
+                <input required title="objet" type="text" name="objet" placeholder=" Objet du message"> <!--Défini un champ de saisie, avec un type email pour exiger un contenu au format de text, avec une chaine de caractere-->
+            </p>
+            <textarea required title="message" name="message" placeholder="  Votre message...."></textarea> <!--Défini une zone de saisie, avec une chaine de caractere-->
+            <input title="envoyer" type="submit" name="envoi" value="Envoyer">
+        </fieldset>
+        <a target="_blank" href="https://www.instagram.com/"><img src="images/logoinsta.png" alt="Redirection compte instagram"></a>
+        <a target="_blank" href="https://www.instagram.com/">Custom Color</a>
+    </main>
+
+    <footer role="contentinfo">  <!--Permet de segmenter le code pour la section qui représente le contenue de conclusion en pied de page-->
+        <img src="images/logo.png" alt="">
+        <p>Image créée par une l'IA Midjourney</p>
+        <p lang="en">Website created and designed by SALY THÉO  |  Copyright © 2023 Color Custom Inc. Tous droits réservés.</p>
+        <nav role="navigation">
+            <div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="categorie1.html">Iphone</a></li>
+                    <li><a href="categorie2.html">Watch</a></li>
+                    <li><a href="categorie3.html">Mac</a></li>
+                    <li><a href="propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

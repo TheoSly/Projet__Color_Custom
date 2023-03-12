@@ -1,0 +1,151 @@
+body {
+    max-width: 960px; /*Défini la taille max de la page en largeur */ 
+    margin: auto;   /*Centrer les éléments au millieu*/ 
+    font-family: 'Montserrat', sans-serif /*Change la police d'écriture*/ 
+}
+
+/*HEADER*/ 
+
+nav img{
+    width: 30px; /*mofifie la taille de l'image*/ 
+    margin-bottom: 20px; /*Augmente la marge de l'élement*/ 
+    object-fit: contain; /*Garde les meme proportions d'images*/ 
+}
+
+header nav {
+    z-index: 100; /*Affiche devant les autres éléments inférieur a zindex 100*/ 
+    width: 960px; /*Défini la largeur de l'élément*/ 
+    height: 60px; /*Défini la hauteur de l'élément*/ 
+    position: fixed; /*Ajoute la position fixed pour que l'élement de bouge pas au défillement de la page */ 
+    display: flex; /*Défini la capacité flexible à l'élément*/ 
+    justify-content: center; /*Permet de center les éléments*/ 
+    background: linear-gradient(rgb(255, 255, 255) 33px, rgba(0, 0, 0, 0)); /*Ajoute un dégradé de couleur en background  */ 
+    animation: menueffet 0.3s ease-in-out; /*Ajoute une animation a l'élément */ 
+}
+
+header nav ul{
+    margin-top: 7px; /*Augmente la marge de l'élement*/ 
+}
+
+header nav ul li {
+    display: inline-block; /*Permet de mettre en ligne la liste à puce*/ 
+}
+
+header nav a{
+    text-decoration: none; /*Enleve les décorations (le soulignage de hypertext*/ 
+    font-size: 18px; /*Augmente la taille du text*/ 
+    color: #000000; /*Change la couleur du text*/ 
+    margin-left: 48px;  /*Augmente la marge de l'élement*/ 
+}
+
+header nav a:hover{
+    color: #eb570e;
+    border-bottom: 3px solid rgb(0, 0, 0);   /*Ajoute une bordure d'une largeur de 3pixels de couleur noir*/ 
+}
+
+.sous{
+    display: none;   /*Rend invisible l'élément*/ 
+    position: absolute;   /*Est position de facon absolue ne laisse pas espace vide*/ 
+    margin-top: 2px;
+}
+
+header nav > ul li:hover .sous{
+    display: flex;
+}
+
+.sous a {
+    background-color: #ffffffbd;
+    border-radius: 3px;   /*Modifie la bordure des coins de faonc à avoir un arrondi*/ 
+    margin-left: -18px;
+}
+
+@keyframes menueffet {    /*Définie un nouvelle éffet*/ 
+    from {
+        opacity: 0;   /*L'élément est caché */ 
+        transform: translateY(-50px); /*L'élement est position -50 pixiel sur l'axe des Y*/ 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+h1 {
+    position: absolute;
+    margin-left: 50px;
+    top: 0px; /*Défini la position de l'élément en fonction de la hauteur*/ 
+    font-size: 150px;
+    color: rgb(69, 50, 51);
+    animation: apparition 0.5s ease-in-out;
+}
+
+h2 {
+    position: absolute;
+    margin-left: 50px;
+    top: 150px;
+    font-size: 150px;
+    color: rgb(39, 30, 31);
+    animation: apparition 0.5s ease-in-out; 
+}
+
+@keyframes apparition{
+    from {
+        transform:   translate(-80px, 0);
+    }
+    to {
+        transform:   translate(0px, 0px);
+    }
+}
+
+/*MAIN*/ 
+
+main{
+    margin: 50px;
+}
+
+/*FOOTER*/
+
+footer{
+    position: relative; /*Position dans le flux normal de la page*/ 
+    display: flex;
+	height: 150px;
+	background: rgb(219, 219, 219);
+}
+
+footer img{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 90px;
+    object-fit: contain;
+}
+
+footer p:nth-child(2){
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 350px;
+}
+
+footer p{
+    position: absolute;
+    margin-top: 113px;
+    margin-left: 70px;
+}
+
+footer div {
+    margin-left: 770px;
+}
+
+footer div a{
+    margin-top: 2px;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 104, 0);
+    text-align: center;
+}
+
+footer div a:hover{
+    color: #000000;   
+}
+
+
+

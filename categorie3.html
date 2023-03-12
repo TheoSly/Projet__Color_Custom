@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--Pemert de déclarer la langue de la page-->
+<head>
+    <meta charset="UTF-8"> <!--Permet de déclarer l'encodage en UTF8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Permet d'afficher le contenur dans la version la plus récente du moteur de recherche-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" title="Design" href="css/stylecategorie3.css"> <!--Permet de définir la relation entre un document-->
+    <link rel="shortcut icon" href="images/logo.png"> <!--Permet d'afficher une image en logo dans l'entête de page-->
+    <title>Mac Custom | Apple Custom</title> <!--Permet d'affecter un nom de page dans l'entête de pas -->
+</head>
+<body>
+    <header role="banner"> <!--Permet de segmenter le code pour la section d'introduction -->
+        <nav role="navigation"> <!--Permet de sectionner une page ayant des liens vers d'autres pages-->
+            <img src="images/logo.png" alt=""> <!--Permet d'integrer une image-->
+            <ul> <!--Représente une liste à puces -->
+                <li><a href="index.html">Accueil</a></li> <!--Permet de représenter un élément dans la liste, ici un lien hypertext a -->
+                <li><a href="categorie1.html">Iphone</a>  
+                    <ul class="sous">
+                        <li><a href="categorie1.html">Iphone Bois</a></li>
+                    </ul>
+                </li>
+                <li><a href="categorie2.html">Watch</a>
+                    <ul class="sous">
+                        <li><a href="categorie2.html">Watch Nature</a></li>
+                    </ul>
+                </li>
+                <li><a href="categorie3.html">Mac</a>
+                    <ul class="sous">
+                        <li><a href="categorie3.html">Mac Color</a></li>
+                    </ul>
+                </li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">🇫🇷</a></li>
+                <li><a href="">🇬🇧</a></li>
+            </ul>
+        </nav>
+        <img src="images/bannierecat3.jpg" alt="">
+        <h1 lang="en">Custom</h1>
+        <h2>Ton Mac</h2>
+    </header>
+
+    <main role="main">  <!--Permet de segmenter le code pour la section qui représente le contenue majoritaire du body-->
+        <section> <!--Permet de segmenter le code pour la section qui gégéralise un meme sujet -->
+            <aside> <!--Permet de segmenter le code pour la section qui représente un contenu appotant des informations supplémentaires-->
+                <nav role="navigation">
+                    <h3>Contenus</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="categorie1.html">Iphone</a>
+                            <ul>
+                                <li><a href="categorie1.html">Iphone Bois</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="categorie2.html">Watch</a>
+                            <ul>
+                                <li><a href="categorie2.html">Watch Nature</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="categorie3.html" class="pactuel">Mac</a>
+                            <ul>
+                                <li><a href="#article1" class="pactuel">Mac Color</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="propos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <article>   <!--Permet de segmenter le code pour une composition autonome dans la page-->
+                    <table id="article1" role="presentation">   <!--Permet de représenter un tableau de données-->
+                        <tr>    <!--Permet de définir une ligne de cellules dans le tableau-->
+                            <th scope="row" colspan="2"> <img src="images/images1cat3.jpg" alt="imagearticle1"></th> <!--Permet de définir une cellle dans le tableau, avec une taille des 2 cellules du bas -->
+                        </tr>
+                        <tr> 
+                            <td colspan="2" class="produit">Personnalisez votre Macbook à votre façon</td>  
+                        </tr>
+                        <tr> 
+                            <td>Choisissez parmi 7 coloris, pour mettre en valeur votre Mac avec votre outfit du jour.</td> 
+                            <th  scope="row" rowspan="2"> <img src="images/images2cat3.jpg" alt="imagearticle2"></th> 
+                        </tr>
+                        <tr> 
+                            <td>Des dégradés sont aussi disponibles, si vous étes d'humeur joyeuse.</td>  
+                        </tr>
+                    </table>
+                </article>
+            </aside>  
+        </section>
+    </main>
+
+    <footer role="contentinfo">  <!--Permet de segmenter le code pour la section qui représente le contenue de conclusion en pied de page-->
+        <img src="images/logo.png" alt="">
+        <p>Image créée par une l'IA Midjourney</p>
+        <p lang="en">Website created and designed by SALY THÉO  |  Copyright © 2023 Color Custom Inc. Tous droits réservés.</p>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="categorie1.html">Iphone</a></li>
+                    <li><a href="categorie2.html">Watch</a></li>
+                    <li><a href="categorie3.html">Mac</a></li>
+                    <li><a href="propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

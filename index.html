@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--Pemert de déclarer la langue de la page-->
+<head>  <!--Permet d'indiquer des metadonnées au document'-->
+    <meta charset="UTF-8"> <!--Permet de déclarer l'encodage en UTF8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Permet d'afficher le contenur dans la version la plus récente du moteur de recherche-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" title="Design" href="css/style.css"> <!--Permet de définir la relation entre un document-->
+
+    <link rel="shortcut icon" href="images/logo.png"> <!--Permet d'afficher une image en logo dans l'entête de page-->
+    <title>Color Custom</title> <!--Permet d'affecter un nom de page dans l'entête de pas -->
+</head>
+<body>
+    <header role="banner"> <!--Permet de segmenter le code pour la section d'introduction -->
+        <nav role="navigation"> <!--Permet de sectionner une page ayant des liens vers d'autres pages-->
+            <img src="images/logo.png" alt=""> <!--Permet d'integrer une image-->
+            <ul> <!--Représente une liste à puces -->
+                <li><a href="index.html">Accueil</a></li> <!--Permet de représenter un élément dans la liste, ici un lien hypertext a -->
+                <li><a href="categorie1.html">Iphone</a>  
+                    <ul class="sous">
+                        <li><a href="categorie1.html">Iphone Bois</a></li>
+                    </ul>
+                </li>
+                <li><a href="categorie2.html">Watch</a>
+                    <ul class="sous">
+                        <li><a href="categorie2.html">Watch Nature</a></li>
+                    </ul>
+                </li>
+                <li><a href="categorie3.html">Mac</a>
+                    <ul class="sous">
+                        <li><a href="categorie3.html">Mac Color</a></li>
+                    </ul>
+                </li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">🇫🇷</a></li>
+                <li><a href="">🇬🇧</a></li>
+            </ul>
+        </nav>
+        <img src="images/banniere1.jpg" alt="">
+        <h1>Color</h1>   <!--Permet de représenter un titre celon son niveau (h1-h6) ici h1 donc le plus grand-->
+        <h2 lang="en">Custom</h2> <!--Permet de représenter un titre, ici h2 dans plus petit que h1-->
+        <h3>Personnalise tes produits Apple, Iphone, Watch et Macbook !</h3>
+        <h4 lang="en">⇩ Scroll ⇩</h4>
+    </header>
+
+    <main role="main">  <!--Permet de segmenter le code pour la section qui représente le contenue majoritaire du body-->
+        <img src="images/banniere2.jpg" alt="">
+        <h5 class="description1">Imagine</h5>
+        <h5 class="description2">ton</h5>
+        <h5 class="description3">appareil</h5>
+
+        <img src="images/banniere3.jpg" alt="">
+        <h6 class="description4">Nous le créons</h6>
+        <div class="listeboutons">  <!--Permet de structurer le code en une section à part-->
+            <button class="bouton" onclick="window.location.href = 'categorie1.html';">Iphone</button>  <!--Permet d'afficher un bouton cliquable, permettant une action-->
+            <button class="bouton" onclick="window.location.href = 'categorie2.html';">Watch</button>
+            <button class="bouton" onclick="window.location.href = 'categorie3.html';">Mac</button>
+        </div>
+    </main>
+
+    <footer role="contentinfo">  <!--Permet de segmenter le code pour la section qui représente le contenue de conclusion en pied de page-->
+        <img src="images/logo.png" alt="">
+        <p>Image créée par une l'IA Midjourney</p>
+        <p lang="en">Website created and designed by SALY THÉO  |  Copyright © 2023 Color Custom Inc. Tous droits réservés.</p>  <!--Permet d'afficher un paragraphe-->
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="categorie1.html">Iphone</a></li>
+                    <li><a href="categorie2.html">Watch</a></li>
+                    <li><a href="categorie3.html">Mac</a></li>
+                    <li><a href="propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
