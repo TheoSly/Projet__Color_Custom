@@ -3,7 +3,7 @@ Chers réseaux,
 
 Cahier des charges :
 🔸 Site déclinable en 2 Langues
-🔸    3 Catégories
+🔸 3 Catégories
 🔸 5 Articles par catégories
 🔸 Une page À propos
 🔸 Une page de mention l’égal
